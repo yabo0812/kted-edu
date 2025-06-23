@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# 인증키 파일
+.env
