@@ -7,9 +7,11 @@ requires-python = ">=3.12"
 dependencies = [
     "ipykernel>=6.29.5",
     "langchain>=0.3.26",
+    "langchain-cli>=0.0.36",
     "langchain-community[all]>=0.3.26",
     "langchain-openai>=0.3.24",
     "langgraph>=0.4.8",
+    "langserve[all]>=0.3.1",
     "pandas>=2.3.0",
     "python-dotenv>=1.1.0",
     "seaborn>=0.13.2",
