@@ -8,6 +8,7 @@ dependencies = [
     "bs4>=0.0.2",
     "ipykernel>=6.29.5",
     "langchain>=0.3.26",
+    "langchain-chroma>=0.2.4",
     "langchain-cli>=0.0.36",
     "langchain-community[all]>=0.3.26",
     "langchain-experimental>=0.3.4",
