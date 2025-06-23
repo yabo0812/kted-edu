@@ -1,2 +1,1 @@
-"# ktds_llm" 
-"# ktds_llm" 
+MS AI 교육 1일차
