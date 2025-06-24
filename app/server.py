@@ -1,12 +1,11 @@
-# app/server.py
 from fastapi import FastAPI
-from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
+from app.rag import rag_chain
+from langchain_openai import ChatOpenAI
+from langserve import add_routes
 
 # 환경변수 로드
 load_dotenv()
-
-from langserve import add_routes
 
 # FastAPI 서버를 설정
 app = FastAPI(
@@ -22,6 +21,13 @@ add_routes(
     path="/openai",  # OpenAI 모델에 대한 경로
 )
 
+add_routes(
+    app,
+    rag_chain,
+    path="/rag",  # RAG 체인에 대한 경로
+)
+
+# FastAPI 서버 실행
 if __name__ == "__main__":
     import uvicorn
 

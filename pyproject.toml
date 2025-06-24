@@ -23,3 +23,8 @@ dependencies = [
     "seaborn>=0.13.2",
     "sentence-transformers>=4.1.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "ktds-edu",
+]

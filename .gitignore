@@ -5,9 +5,8 @@ build/
 dist/
 wheels/
 *.egg-info
+.env
 
 # Virtual environments
 .venv
-
-# 인증키 파일
 .env
