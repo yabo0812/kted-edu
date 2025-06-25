@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "langgraph-docs-mcp": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "mcpdoc",
+        "mcpdoc",
+        "--urls",
+        "LangGraph:https://langchain-ai.github.io/langgraph/llms.txt LangChain:https://python.langchain.com/llms.txt",
+        "--transport",
+        "stdio"
+      ]
+    },
+    "calculator-mcp": {
+      "command": "uv",
+      "args": [
+         "--directory",
+        "C:\\Users\\User\\kt-ds",
+        "run",
+        "math_server.py"
+      ]
+    },
+    "mcp-rag": {
+      "command": "uv",
+      "args": [
+         "--directory",
+        "C:\\Users\\User\\Documents\\GitHub\\ktds-edu",
+        "run",
+        "mcp_rag.py"
+      ]
+    }
+  }
+}
